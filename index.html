@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srijan Ponnala</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f47cf83957.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src = "images/logos.png" class = "logo">
+            <ul id="sidemenu">
+                <li><a href = "#header">Home</a></li>
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#portfolio">Portfolio</a></li>
+                <li><a href = "#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science @ Georgia Tech</p>
+            <h1>Hi, I'm <span>Srijan</span> Ponnala</h1>
+        </div>
+    </div>
+</div>
+<!----------About Section--------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/portrait.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a third-year undergraduate in the computer science program at Georgia Tech with concentrations in Artificial Intelligence
+                and People, and a keen interest in Financial Markets. I have knowledge and experience in Python, Java, SQL, C, C++, 
+                Assembly, and HTML programming languages and am interested in a vast range of development languages and softwares with a focus
+                on Artificial Intelligence and Machine Learning. I am supplementing my degree in computer science with an emphasis on finance
+                and investments through extra curricular activities. I am currently seeking roles as a product management / software
+                engineering / quantitative developer / data science intern where I can utilize and develop my knowledge and communication
+                skills.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>Python, Java, SQL, C, C++, Assembly, HTML, CSS, SAS, Dart, R</li>
+                        <li><span>Software</span><br>Android Studio, Flutter, Tensorflow, Microsoft Office Suite, Linux, GitHub, Jupyter, PowerBI, AWS, Tableau</li>
+                        <li><span>Languages</span><br>English (Native), Telugu (Fluent), French (Intermediate), Hindi (Basic)</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>May 2023 - Aug 2023</span><br>Software Engineer Intern @ Samsung Semiconductor</li>
+                        <li><span>Sep 2022 - Dec 2022</span><br>Computer Science Research Mentorship Program (CSRMP) Scholar @ Google</li>
+                        <li><span>May 2023 - Present</span><br>Undergraduate Researcher @ The Rogues Gallery VIP Team, Sandia National Labs</li>
+                        <li><span>Aug 2022 - Dec 2022</span><br>Software Engineer @ The Andrew Collins Project </li>
+                        <li><span>Jun 2020 - Nov 2020</span><br>Software Engineer @ Lower Macungie Historical Society </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - 2024</span><br>Bachelor of Science in Computer Science, Threads in Artificial Intelligence and People @ Georgia Tech</li>
+                        <li><span>2017 - 2021</span><br>Honor Graduate @ Emmaus High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------Portfolio----------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/nltk.png">
+                <div class="layer">
+                    <h3>Toxic Tweet Sentiment Analyzer</h3>
+                    <p>A Python project utilizing the NLTK library for sentiment analysis, aimed at identifying and flagging toxic content within tweets.</p>
+                    <a href="https://github.com/cjponnala/Toxic-Tweet-Sentiment-Analyzer"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/jordle-resize.png">
+                <div class="layer">
+                    <h3>Jordle</h3>
+                    <p>A JavaFX-based word puzzle game reminiscent of Wordle, where players guess computer science terms, combining entertainment with computer science vocabulary.</p>
+                    <a href="https://github.com/cjponnala/Jordle"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------Contact----------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sponnala6@gatech.edu</p>
+                <p><i class="fa-solid fa-square-phone"></i>+1 610-810-6633</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/srijanponnala/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/cjponnala"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="#" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Srijan.</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzUtnTxHxEiT9WYDVT9k7Wr8y0yfvZVkLEgFndBIqn67C5Ov1vjeAnhz1-lmTPS599QaQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
